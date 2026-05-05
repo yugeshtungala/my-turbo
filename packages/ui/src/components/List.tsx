@@ -7,7 +7,6 @@ type ListProps = {
 };
 
 export const List = ({ pokemons }: ListProps) => {
-  console.log(pokemons, "listttttt");
   return (
     <div className="container">
       {pokemons.map((poke) => (

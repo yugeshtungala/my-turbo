@@ -1,2 +1,2 @@
 export * from "./pokemon";
-export * from "./types";
+export type { Pokemon } from "./types";

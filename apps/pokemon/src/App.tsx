@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import "./App.css";
 import { getPokemons, type Pokemon } from "@repo/api";
+import { List } from "@repo/ui";
 
 function App() {
   const [pokemons, setPokemons] = useState<Pokemon[]>([]);
@@ -13,7 +14,11 @@ function App() {
   }, []);
 
   console.log(pokemons, "xxxxxx");
-  return <></>;
+  return (
+    <>
+      <List pokemons={pokemons} />
+    </>
+  );
 }
 
 export default App;
